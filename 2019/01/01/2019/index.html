@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="When.wu">
 <meta property="og:description" content="&amp;ensp;&amp;ensp;&amp;ensp;又是新的一年。&amp;ensp;&amp;ensp;&amp;ensp;又老了一岁了，今天去同学的婚礼了，有点羡慕，也有点怀念旧时光了，虽然我知道这并不好。他挺勇敢的，从高中的时候就是如此了，说了很多真心话，相信也在认真的做着吧！可惜的是没有去小吴经理的婚礼，确实有点远了，在广西，心有余而力不足了。也约定好了下次过去，得喝酒，把差的喜酒给补回来。真的不是我想怀念旧时光，只是，有太多的">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-01-01T15:58:22.782Z">
+<meta property="og:updated_time" content="2019-01-01T16:00:52.484Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="二零一九">
 <meta name="twitter:description" content="&amp;ensp;&amp;ensp;&amp;ensp;又是新的一年。&amp;ensp;&amp;ensp;&amp;ensp;又老了一岁了，今天去同学的婚礼了，有点羡慕，也有点怀念旧时光了，虽然我知道这并不好。他挺勇敢的，从高中的时候就是如此了，说了很多真心话，相信也在认真的做着吧！可惜的是没有去小吴经理的婚礼，确实有点远了，在广西，心有余而力不足了。也约定好了下次过去，得喝酒，把差的喜酒给补回来。真的不是我想怀念旧时光，只是，有太多的">
@@ -328,6 +328,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/01/2019/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/01/2019/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -371,7 +381,7 @@
 <li>学会两首日文歌《lemon》与《未来へ》。</li>
 <li>爱自己。</li>
 </ul>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2019年1月1日/When.wu</p>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2019年1月1日/When.wu</p>
 
       
     </div>
@@ -463,6 +473,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -772,6 +785,39 @@
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unjkp.com/valine/dist/Valine.min.js"></script>  //删除Valine核心代码库外链调用
+  <script src="/js/src/Valine.min.js"></script>  //调用刚下载的本地文件以加速加载速度
+
+    //这里改为从本地加载
+  
+  <script src="/js/src/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'zAHXVd5JKs3HyyQiCbfQGup6-gzGzoHsz',
+        appKey: '3KKOeNFmWsUCbGUUi7KobXOt',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:['nick'] ,  //评论者只需要提供评论的昵称即可
+        pageSize:'10' || 10,
+    });
+    //增加以下六行代码去除 power by valine
+    var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+        item.parentNode.removeChild(item);
+      });
+    }
+  </script>
 
 
   
